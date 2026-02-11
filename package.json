@@ -1,0 +1,32 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "curso midudev node 18",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drodrigomoura/course-nodejs-18.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs"
+  ],
+  "author": "rodri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drodrigomoura/course-nodejs-18/issues"
+  },
+  "homepage": "https://github.com/drodrigomoura/course-nodejs-18#readme",
+  "dependencies": {
+    "picocolors": "1.1.1"
+  },
+  "devDependencies": {
+    "standard": "17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
