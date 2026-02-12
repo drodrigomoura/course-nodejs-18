@@ -4,7 +4,8 @@
   "main": "01-http.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon 01-http.js"
+    "dev": "nodemon 01-http.js",
+    "dev2": "nodemon 02-routing.js"
   },
   "keywords": [],
   "author": "",

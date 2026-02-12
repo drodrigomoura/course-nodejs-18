@@ -1,0 +1,12 @@
+### Get /about html
+GET http://localhost:3000/about
+
+### POST pokemon
+POST http://localhost:3000/pokemon
+Content-Type: application/json
+
+{
+    "name": "Pikachu",
+    "type": "Electric",
+    "moves": ["Thunder Shock", "Quick Attack", "Iron Tail", "Electro Ball"]
+}
