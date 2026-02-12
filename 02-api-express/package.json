@@ -1,0 +1,16 @@
+{
+  "name": "02-api-express",
+  "version": "1.0.0",
+  "main": "01-http.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon 01-http.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
