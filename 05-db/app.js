@@ -1,18 +1,20 @@
 import express, { json } from 'express'
-import { moviesRouter } from './routes/movies.js'
+import { createMovieRouter } from './routes/movies.js'
 import { corsMiddleware } from './middlewares/cors.js'
 
-const app = express()
-app.disable('x-powered-by')
-app.use(json())
+export const createApp = ({ movieModel }) => {
+  const app = express()
+  app.disable('x-powered-by')
+  app.use(json())
 
-app.use(corsMiddleware())
+  app.use(corsMiddleware())
 
-// movies routes
-app.use('/api/v1/movies', moviesRouter)
+  // movies routes
+  app.use('/api/v1/movies', createMovieRouter({ movieModel }))
 
-const PORT = process.env.PORT || 3000
+  const PORT = process.env.PORT || 3000
 
-app.listen(PORT, () => {
-  console.log(`Servidor escuchando en el puerto ${PORT}`)
-})
+  app.listen(PORT, () => {
+    console.log(`Servidor escuchando en el puerto ${PORT}`)
+  })
+}
