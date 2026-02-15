@@ -1,0 +1,33 @@
+### GET movies
+GET http://localhost:3000/api/v1/movies
+
+### GET movie by id
+GET http://localhost:3000/api/v1/movies/a92bc798-0a05-11f1-b605-a617803ba898
+
+### GET movies by genre
+GET http://localhost:3000/api/v1/movies?genre=action
+
+### POST create a new movie
+POST http://localhost:3000/api/v1/movies
+Content-Type: application/json
+
+{
+  "title": "The Lord of the Rings: The Two Towers",
+  "year": 2002,
+  "director": "Peter Jackson",
+  "duration": 179,
+  "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
+  "genre": ["Action", "Adventure", "Fantasy"],
+  "rate": 7.8
+}
+
+### PATCH update a movie partially
+PATCH http://localhost:3000/api/v1/movies/a92bc798-0a05-11f1-b605-a617803ba898
+Content-Type: application/json
+
+{
+  "year": 1993
+}
+
+### DELETE a movie
+DELETE http://localhost:3000/api/v1/movies/a92bc798-0a05-11f1-b605-a617803ba898
